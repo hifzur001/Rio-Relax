@@ -1,0 +1,750 @@
+body {
+    font-family: Axiforma, sans-serif !important;
+}
+html {
+    scroll-behavior: smooth scroll;
+}
+.announcement-bar {
+    background-color: #644222; /* Brown color */
+    color: white;
+    padding: 10px 0;
+}
+.announcement-bar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.announcement-bar a:hover {
+    text-decoration: underline;
+}
+/* Custom styles for responsiveness */
+@media (max-width: 767.98px) {
+    .announcement-bar .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .announcement-bar .container {
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .announcement-bar .social-icons {
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .announcement-bar .social-icons a {
+        margin-right: 10px;
+    }
+}
+/* Navbar Start */
+.navbarStarted {
+    background: #09090975; /* Semi-transparent dark background */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white; /* Change brand text color to white for contrast */
+}
+
+.nav-link {
+    margin-right: 15px; /* Space between links */
+    color: white; /* Change link text color to white for contrast */
+}
+
+.nav-link:hover {
+    color: #ddd; /* Change link color on hover */
+}
+
+.registrationBtn {
+    background: #be9874;
+    color: #fff;
+    float: left;
+    padding: 16px 30px;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.registrationBtn:hover {
+    background-color: #5a6268; /* Darker on hover */
+}
+
+/* Navbar End */
+/* Carousel item styles with fade and scale effect */
+.owl-carousel .item {
+    position: relative;
+}
+
+/* Style for carousel images */
+.owl-carousel .item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Custom navigation styles */
+.custom-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 1;
+    pointer-events: none; /* Prevent interactions on custom nav container */
+}
+
+/* Style for left and right navigation buttons */
+.custom-nav .owl-prev,
+.custom-nav .owl-next {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    pointer-events: all; /* Enable interactions on buttons */
+}
+
+.custom-nav .owl-prev:hover,
+.custom-nav .owl-next:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Align left chevron to the left */
+.custom-nav .owl-prev {
+    margin-left: 10px;
+}
+
+/* Align right chevron to the right */
+.custom-nav .owl-next {
+    margin-right: 10px;
+}
+
+/* Additional styling for slider start if needed */
+.SliderStart {
+    position: relative;
+    top: -72px;
+    z-index: -1;
+}
+
+/* Hide default Owl Carousel navigation */
+.owl-carousel .owl-nav {
+    display: none;
+}
+
+.owl-carousel .item {
+    position: relative;
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Text color, adjust as needed */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+    padding: 20px; /* Padding around the text */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.text-overlay h2,
+.text-overlay h3,
+.text-overlay p {
+    margin: 10px 0;
+}
+
+.text-overlay .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.text-overlay .btn:hover {
+    background-color: #0056b3; /* Button hover color */
+}
+.text-overlay h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.text-overlay h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.btnExplore {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: transparent !important; /* Elegant button color */
+    border: 2px solid #fff !important;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: #a97f55; /* Slightly darker button color on hover */
+    }
+}
+.SliderStart {
+    position: relative;
+    margin-bottom: 0; /* Ensure no margin below the slider */
+}
+
+.bookingAvailability {
+    position: absolute;
+    bottom: -33%; /* Move the booking form upwards by 50% of its height */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 10; /* Ensure it's on top of the slider */
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.9
+    ); /* Optional: Add a background for better readability */
+    padding: 20px;
+    box-shadow: 0 20px 60px 0 hsla(0, 0%, 8%, 0.2);
+}
+.bookingAvailability {
+    margin-top: -140px;
+    background: #fff;
+    padding: 25px;
+}
+
+.checkAvailabilityBtb {
+    background: #644222;
+    transition: all 0.5s;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 0px;
+    &:hover {
+        background: #000;
+        color: #fff;
+        transform: scale(1.12);
+        border-radius: 5px 0;
+    }
+}
+.bookingAvailability .form-label i {
+    color: #644222;
+}
+
+/* About us start */
+.overlap-image {
+    z-index: 1;
+    right: 10px;
+    bottom: 0px;
+}
+.customTextColor,
+.servicesTitle,
+.dixcoverTranquil,
+.roomHeaderElegance {
+    color: #644222;
+}
+.customHead {
+    font-size: 60px;
+    color: #101012;
+    font-weight: 600;
+}
+.customTextpara,
+.dixcoverPara,
+.detailsParaGraph,
+.socialParaStart {
+    color: #777;
+    font-size: 15px;
+}
+.customTextList li {
+    color: #644222;
+}
+.customTextList li::before {
+    color: #644222;
+    content: "✓";
+    font-family: Font Awesome\5 Pro;
+    margin-right: 10px;
+}
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+    background: #ffffff;
+    color: #644222;
+}
+.discoverMorebtn,
+.btn-get-started,
+.btn-book-now,
+.bookRoomBtn,
+.bookButton,
+.submitBtn,
+.subscribeButton {
+    background: #644222;
+    color: #fff;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 0;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    &:hover {
+        background: #000;
+        color: #fff;
+        transform: scale(1.05);
+    }
+}
+/* About us end */
+/* Feature Box start */
+.feature-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s;
+    background-color: #f9f9f9;
+}
+.feature-box:hover {
+    transform: scale(1.05);
+}
+.feature-icon {
+    font-size: 50px;
+    color: #007bff; /* Change color as needed */
+}
+.feature-title {
+    color: #343a40; /* Dark text color */
+}
+.feature-text {
+    color: #6c757d; /* Light text color */
+}
+.readMoreFeature {
+    color: #644221 !important;
+    background: transparent;
+    text-decoration: none;
+}
+/* Feature Box end */
+/* Suite start */
+.card {
+    border: none;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+}
+.owl-carousel .item-card {
+    margin: 15px;
+}
+
+.owl-carousel .item-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.btn-group,
+.btn-group-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-group > .btn {
+    background: #423223;
+    border: none;
+    padding: 15px 0;
+    position: relative;
+    margin-top: -55px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.costButton {
+    border-right: 3px solid #000 !important;
+}
+.costButton:hover {
+    border-right: inherit;
+}
+.roomTitle {
+    font-size: 19.02px;
+    color: #101010;
+    margin-bottom: 15px;
+}
+.roomPara {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 15px;
+}
+.roomIcons i {
+    color: #4c4c4c;
+}
+.card-img,
+.card-img-top {
+    border-radius: 0px;
+}
+/* Suite end */
+/* Extra Services start */
+.services-section {
+    padding: 50px 0;
+    background-color: #fff;
+    position: relative;
+}
+.services-section::before {
+    content: "";
+    background: url("your-background-image.png") no-repeat left;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.services-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3e2f20;
+}
+.services-subtitle {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+.card-price {
+    font-size: 48px;
+    color: #3e2f20;
+}
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3e2f20;
+}
+.card {
+    border: none;
+    box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+.card-body {
+    padding: 30px;
+}
+
+.badge-monthly {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+/* Extra Services end */
+/* Testimonial Start */
+.testimonialSection {
+    text-align: center;
+    background: url(../img/testi-bg.png) no-repeat center center/cover;
+    padding: 50px;
+    color: #333;
+}
+
+.testimonialSection h2 {
+    color: #8d6748;
+    font-weight: bold;
+}
+
+.testimonialSection h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.testimonialCard {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.clientImage {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #8d6748;
+}
+
+.clientTitle {
+    color: #8d6748;
+    font-weight: bold;
+}
+
+.ratingStars {
+    color: #ffb400;
+    margin: 10px 0;
+}
+
+.testimonialText {
+    font-style: italic;
+    color: #777;
+    padding: 0 15px;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #8d6748;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: -50px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: -50px;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+    background-color: #8d6748;
+}
+
+/* Testimonial End */
+/* Appointment Start */
+.booking-form {
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.appointment-text {
+    font-size: 18px;
+    color: #8c6031;
+    margin-bottom: 10px;
+}
+
+.booking-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #8c6031;
+}
+
+.form-control,
+.form-select {
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.btn-book-now:hover {
+    background-color: #704c2c;
+    color: #fff;
+}
+
+.room-image {
+    border-radius: 10px;
+}
+.booking-form .form-control {
+    border: 1px solid #64422247;
+}
+/* Appointment End*/
+/* Footer */
+.footer {
+    background: url(../img/footer.png) no-repeat center center/cover;
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .border-top {
+    border-top: 1px solid #6c757d;
+}
+.footer .social-icons i {
+    margin: 0 10px;
+    font-size: 20px;
+}
+.form-control,
+.form-select {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+/* Footer */
+/* Room Details */
+.mainContainer {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: -100px;
+    padding: 30px;
+}
+
+.roomCard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.roomImage {
+    width: 100%;
+    height: auto;
+}
+
+.bookingForm {
+    border-left: 1px solid #ddd;
+}
+
+.mainContainer .form-control {
+    border: 1px solid #926d6367 !important;
+}
+.rightBothImage {
+    height: 623px;
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+    overflow-y: scroll; /* Allows vertical scrolling */
+    -ms-overflow-style: none; /* Hides scrollbar in IE and Edge (legacy) */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+/* WebKit browsers */
+.rightBothImage::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome, Safari, and newer Edge */
+}
+.roomHeader {
+    color: #333;
+    font-weight: bold;
+}
+.roomPrice {
+    color: #ad6c26;
+    font-size: 1.5rem;
+}
+.featureIcon {
+    width: 50px;
+    height: 50px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #333;
+}
+.roomFeatureList {
+    padding: 0;
+    list-style-type: none;
+}
+.roomFeatureItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.featureText {
+    margin-left: 10px;
+    color: #333;
+}
+
+.bookButton:hover {
+    background-color: #915c22;
+}
+.sectionTitle {
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+.starRating {
+    color: #ffc107; /* Golden yellow color */
+    font-size: 1.75rem; /* Increase font size */
+}
+/* Contact strt */
+.contact-section,
+.newsletter-section {
+    background-color: #fff; /* White background for sections */
+    border-radius: 8px;
+}
+.contact-title,
+.newsletter-title,
+.socialTextStart {
+    color: #6f4c3e; /* Dark brown color */
+}
+
+.contactForm {
+    background: #f7f5f1;
+    padding: 100px;
+}
+.newsletterContainer {
+    background: rgb(247, 245, 241);
+    margin-top: 20px;
+    padding: 90px;
+    text-align: center;
+}
+.subscribeButton {
+    background-color: #6f4c3e; /* Adjust button color */
+    color: white;
+}
+.socialCircle {
+    background: #644222;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 28px;
+    height: 80px;
+    line-height: 78px;
+    text-align: center;
+    width: 80px;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.form-group {
+    position: relative;
+}
+.form-group .form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+.form-group .form-control {
+    padding-left: 1.5rem;
+}
+.form-group .input-group-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    z-index: 2;
+}
